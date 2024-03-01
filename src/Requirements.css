@@ -1,0 +1,160 @@
+.animal-list-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.filter-item input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.filter-item input:focus {
+    border-color: #007bff; /* Цвет границы при фокусировке */
+}
+
+.error-message {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.animals {
+    margin-bottom: 20px;
+}
+
+.animal {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.animal-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.animal-table th,
+.animal-table td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.animal-table th {
+    background-color: #f2f2f2;
+}
+
+.animal-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.animal-row:hover {
+    background-color: #dddddd;
+}
+
+.no-animals-message {
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pagination-buttons button {
+    padding: 8px 12px; /* Поля кнопок */
+    background-color: #007bff; /* Цвет фона кнопок */
+    color: #fff; /* Цвет текста кнопок */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination-buttons button:disabled {
+    opacity: 0.5; /* Стиль для отключенных кнопок */
+    cursor: not-allowed;
+}
+
+.page-number {
+    margin: 0 20px; /* Отступы для элемента с номером страницы */
+}
+
+.limit-selector {
+    margin-top: 10px; /* Отступ сверху для селектора элементов на странице */
+}
+
+/* Стили для селектора */
+.limit-selector label {
+    margin-right: 5px;
+}
+
+.limit-selector select {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+@keyframes spinner {
+    to { transform: rotate(360deg); }
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spinner 0.6s linear infinite;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .pagination {
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .pagination-buttons {
+        margin-bottom: 10px;
+    }
+}
