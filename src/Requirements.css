@@ -26,7 +26,7 @@
 }
 
 .filter-item input:focus {
-    border-color: #007bff; /* Цвет границы при фокусировке */
+    border-color: #007bff;
 }
 
 .error-message {
@@ -95,28 +95,28 @@
 }
 
 .pagination-buttons button {
-    padding: 8px 12px; /* Поля кнопок */
-    background-color: #007bff; /* Цвет фона кнопок */
-    color: #fff; /* Цвет текста кнопок */
+    padding: 8px 12px; 
+    background-color: #007bff; 
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .pagination-buttons button:disabled {
-    opacity: 0.5; /* Стиль для отключенных кнопок */
+    opacity: 0.5; 
     cursor: not-allowed;
 }
 
 .page-number {
-    margin: 0 20px; /* Отступы для элемента с номером страницы */
+    margin: 0 20px; 
 }
 
 .limit-selector {
-    margin-top: 10px; /* Отступ сверху для селектора элементов на странице */
+    margin-top: 10px;
 }
 
-/* Стили для селектора */
+
 .limit-selector label {
     margin-right: 5px;
 }
