@@ -45,12 +45,12 @@ const AnimalList: React.FC = () => {
 
     const handleFilterAnimalChange = (event: ChangeEvent<HTMLInputElement>) => {
         setFilterAnimal(event.target.value);
-        setPage(1); // Перебрасываем на первую страницу при изменении фильтра
+        setPage(1);
     };
 
     const handleFilterAmountChange = (event: ChangeEvent<HTMLInputElement>) => {
         setFilterAmount(event.target.value);
-        setPage(1); // Перебрасываем на первую страницу при изменении фильтра
+        setPage(1);
     };
 
     const handlePageChange = (newPage: number) => {
